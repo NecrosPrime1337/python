@@ -1,0 +1,424 @@
+## версия 1.27 beta
+from unifi_video import UnifiVideoAPI	                        	##			@
+import datetime	 							##			@
+from time import sleep						        ##			@
+import os								##			@			ГБОУ Школа 1503
+from xml.dom import minidom					        ##			@				Москва
+import xml.etree.ElementTree as ET			                ##			@				 2019
+import zipfile								##			@
+import glob								##			@		      IT — отдел
+import shutil								##			@
+import subprocess							##			@
+####################################################################################################################################################################
+
+def debug():
+	deb=True
+
+
+def level1():
+	while True :
+		try:
+			print ('trying')
+			try:
+				print ("download")
+				uva.get_camera(camAttrib).recording_between(dateOld+' 09:14:00', dateOld+' 09:27:00', buf+'/'+camAttrib+'-перемена-1.zip')
+				print ("ok")
+			except :
+				print("download error")
+##				level1()
+##			if not os.file.exists(buf+'/'+camAttrib+'-перемена-1.zip'):
+##				print ('file not found')
+				return True
+			return True
+		except AttributeError:
+			print ('attribute error '+camAttrib)
+			return False
+		except ConnectionError :
+			print ('connection error')
+			return False
+def zipper1():
+	try :
+		PathToZip = str(buf+'/'+camAttrib+'-перемена-1.zip')
+		print (buf+'/'+'*.mp4')
+		if not os.path.exists(buf+'/'+"buffer"):
+			os.mkdir(buf+'/buffer')
+		unzip = zipfile.ZipFile(PathToZip)
+		unzip.extractall(buf+'/buffer/')
+	except FileNotFoundError:
+		level1()
+	except zipfile.BadZipFile:
+		print('ошибка архива. поврежденный архив')
+		level1()
+##===============================================================================================
+def level2():
+	while True :
+		try:
+			print ('trying')
+			try:
+				uva.get_camera(camAttrib).recording_between(dateOld+' 10:09:00', dateOld+' 10:30:00', buf+'/'+camAttrib+'-перемена-2.zip')
+			except :
+				print("download error")
+##				level2()
+##			if not os.file.exists(buf+'/'+camAttrib+'-перемена-2.zip'):
+##				print ('file not found')
+##				return False
+			return True
+		except AttributeError:
+			print ('attribute error '+camAttrib)
+			return False
+		except ConnectionError :
+			print ('connection error')
+			return False
+def zipper2():
+	try :
+		PathToZip = str(buf+'/'+camAttrib+'-перемена-2.zip')
+		print (buf+'/'+'*.mp4')
+		if not os.path.exists(buf+'/'+"buffer"):
+			os.mkdir(buf+'/buffer')
+		unzip = zipfile.ZipFile(PathToZip)
+		unzip.extractall(buf+'/buffer/')
+	except FileNotFoundError:
+		print('ошибка архива. поврежденный архив')
+		level2()
+##===============================================================================================
+def level3():
+	while True :
+		try:
+			print ('trying')
+			uva.get_camera(camAttrib).recording_between(dateOld+' 11:14:00', dateOld+' 11:35:00', buf+'/'+camAttrib+'-перемена-3.zip')
+##			if not os.file.exists(buf+'/'+camAttrib+'-перемена-3.zip'):
+##				print ('file not found')
+##				return False
+			return True
+		except AttributeError:
+			print ('attribute error '+camAttrib)
+			return False
+		except ConnectionError :
+			print ('connection error')
+			return False
+def zipper3():
+	try :
+		PathToZip = str(buf+'/'+camAttrib+'-перемена-3.zip')
+		print (buf+'/'+'*.mp4')
+		if not os.path.exists(buf+'/'+"buffer"):
+			os.mkdir(buf+'/buffer')
+		unzip = zipfile.ZipFile(PathToZip)
+		unzip.extractall(buf+'/buffer/')
+	except FileNotFoundError:
+		print('ошибка архива. поврежденный архив')
+		level3()
+		
+##===============================================================================================
+def level4():
+	while True :
+		try:
+			print ('trying')
+			uva.get_camera(camAttrib).recording_between(dateOld+' 12:19:00', dateOld+' 12:40:00', buf+'/'+camAttrib+'-перемена-4.zip')
+##			if not os.file.exists(buf+'/'+camAttrib+'-перемена-1.zip'):
+##				print ('file not found')
+##				return False
+			return True
+		except AttributeError:
+			print ('attribute error '+camAttrib)
+			return False
+		except ConnectionError :
+			print ('connection error')
+			return False
+def zipper4():
+	try :
+		PathToZip = str(buf+'/'+camAttrib+'-перемена-4.zip')
+		print (buf+'/'+'*.mp4')
+		if not os.path.exists(buf+'/'+"buffer"):
+			os.mkdir(buf+'/buffer')
+		unzip = zipfile.ZipFile(PathToZip)
+		unzip.extractall(buf+'/buffer/')
+	except FileNotFoundError:
+		print('ошибка архива. поврежденный архив')
+		level4()
+##===============================================================================================
+def level5():
+	while True :
+		try:
+			print ('trying')
+			uva.get_camera(camAttrib).recording_between(dateOld+' 13:24:00', dateOld+' 13:46:00', buf+'/'+camAttrib+'-перемена-5.zip')
+##			if not os.file.exists(buf+'/'+camAttrib+'-перемена-1.zip'):
+##				print ('file not found')
+##				return False
+			return True
+		except AttributeError:
+			print ('attribute error '+camAttrib)
+			return False
+		except ConnectionError :
+			print ('connection error')
+			return False
+def zipper5():
+	try :
+		PathToZip = str(buf+'/'+camAttrib+'-перемена-5.zip')
+		print (buf+'/'+'*.mp4')
+		if not os.path.exists(buf+'/'+"buffer"):
+			os.mkdir(buf+'/buffer')
+		unzip = zipfile.ZipFile(PathToZip)
+		unzip.extractall(buf+'/buffer/')
+	except FileNotFoundError:
+		print('ошибка архива. поврежденный архив')
+		level5()	
+		
+def level6():
+	while True :
+		try:
+			print ('trying')
+			uva.get_camera(camAttrib).recording_between(dateOld+' 14:29:00', dateOld+' 14:49:00', buf+'/'+camAttrib+'-перемена-6.zip')
+##			if not os.file.exists(buf+'/'+camAttrib+'-перемена-6.zip'):
+##				print ('file not found')
+##				return False
+			return True
+		except AttributeError:
+			print ('attribute error '+camAttrib)
+			return False
+		except ConnectionError :
+			print ('connection error')
+			return False
+def zipper6():
+	try :
+		PathToZip = str(buf+'/'+camAttrib+'-перемена-6.zip')
+		print (buf+'/'+'*.mp4')
+		if not os.path.exists(buf+'/'+"buffer"):
+			os.mkdir(buf+'/buffer')
+		unzip = zipfile.ZipFile(PathToZip)
+		unzip.extractall(buf+'/buffer/')
+	except FileNotFoundError:
+		print('ошибка архива. поврежденный архив')
+		level6()				
+	
+	
+	
+	
+	
+tree = ET.parse('unifi-project/config/config.xml')
+root = tree.getroot()
+##
+##''' получаем параметры даты и времени '''
+date = datetime.datetime.today().replace(microsecond=0)
+dateYear = str(date.year)
+dateMonth = str(date.month)
+##'''============================================================================================================================================================================================================='''
+
+##'''=============================================================================================================================================================================================================='''			
+##
+if date.day == 1:
+	dateOld = datetime.datetime.today().replace(microsecond=0) - datetime.timedelta(days=1)
+	dateDay = str(dateOld.day)
+	dateOld = '{:%Y-%m-}{}'.format(dateOld, dateDay)
+	if date.month < 10:
+		dateMonth = "0" + str(date.month-1)
+
+	else :
+		dateMonth = str(date.month-1)
+
+if date.day < 10:
+	dateOld = datetime.datetime.today().replace(microsecond=0) - datetime.timedelta(days=1)
+	dateDay = str(dateOld.day)
+	dateOld= '{:%Y-%m-0}{}'.format(dateOld, dateDay)
+else :
+	dateDay = str(date.day - 1);
+	dateOld= '{:%Y-%m-}{}'.format(date, date.day - 1)
+
+'''============================================================================================================================================================================================================='''	
+print (date)
+'''=============================================================================================================================================================================================================
+	загружаем видеоматериалы
+================================================================================================================================================================================================================'''
+cam_name = str('c13 floor 1')
+
+print (dateOld)
+'''print (dateYear, dateMonth, dateDay)'''
+
+'''anyKey = input("press any key to exit")'''
+
+print(root)
+buf= str('/tmp/cameras/buffer')
+if not os.path.exists("/tmp/cameras"):
+	os.mkdir("/tmp/cameras")
+	os.mkdir("/tmp/cameras/buffer")
+	os.mkdir("/tmp/cameras/buffer/buffer")
+
+for building in root:
+	for ipA in building.findall('ip'):
+		ipaddr = ipA.text
+	for Api in building.findall('key'):
+		apikey = Api.text
+	try :
+		print ("connecting...")
+		uva = UnifiVideoAPI(api_key=apikey, addr=ipaddr)
+	except :
+		try :
+			uva = UnifiVideoAPI(api_key=apikey, addr=ipaddr)
+		except:
+			print ("error of connections")
+
+
+	for  floors in building:
+#		[os.rename(f, f.replace(' ', '-')) for f in os.listdir('.') if not f.startswith('.')]
+		for floor in floors:
+			for cam in floor:
+				print(building.text,floor.text,cam.text)
+				if not os.path.exists(buf+'/'+"buffer"):
+					os.mkdir(buf+'/buffer')
+				floorAttrib=str(floor.text)
+				buildAttrib=str(building.text)
+				camAttrib = str(cam.text)
+				camName = str(cam.attrib)
+				directory = str('/tmp/downloader/'+dateDay+'-'+dateMonth+'-'+dateYear+'/'+buildAttrib)
+				
+##==================================================================================================================				
+				if not os.path.exists(directory+'/перемена-1/'):
+					os.makedirs(directory+'/перемена-1/')
+				print ("<================================================DOWNLOADING=======================================================>")
+				print (directory+'/перемена-1/'+camAttrib)
+				level1()
+				print ("<====================================================done==========================================================>")
+				zipper1()
+				sorted(buf+'/buffer/')
+				FileList=os.listdir(buf+'/buffer')
+				FileList.sort()
+				sortList=""
+				for files in FileList:
+					sortList += buf+'/buffer/'+files+' \+ '
+				sortList= sortList[:-3]
+				print (sortList)
+				print('mkvmerge -o \"' +directory+'/перемена-1/'+camAttrib+'.mkv\" '+sortList)
+				os.system('mkvmerge -o \"' +directory+'/перемена-1/'+camAttrib+'.mkv\" '+sortList)
+				print("==================================================buffer cleaning====================================================")
+				os.system('chmod 777 '+buf)
+				os.system('rm -r '+ buf+'/*')
+				print("=====================================================uploading=======================================================")
+				os.system('rclone copy /tmp/downloader/  remote:/дежурства')
+				os.system('rm -r '+directory)
+##===================================================================================================================					
+				if not os.path.exists(buf+'/'+"buffer"):
+					os.mkdir(buf+'/buffer')
+				if not os.path.exists(directory+'/перемена-2/'):
+					os.makedirs(directory+'/перемена-2/')
+				print (directory+'/'+camAttrib+'-перемена-2.zip')
+				level2()
+				
+				print ("====================================================done==========================================================")
+				zipper2()
+				sorted(buf+'/buffer/')
+				FileList=os.listdir(buf+'/buffer')
+				FileList.sort()
+				sortList=""
+				for files in FileList:
+					sortList += buf+'/buffer/'+files+' \+ '
+				sortList= sortList[:-3]
+				print (sortList)
+
+				print('mkvmerge -o \"' +directory+'/перемена-2/'+camAttrib+'\.mkv\" '+sortList)
+				os.system('mkvmerge -o \"' +directory+'/перемена-2/'+camAttrib+'.mkv\" '+sortList)
+				os.system('chmod 777 '+buf)
+				os.system('rm -r '+buf+'/*')
+				os.system('rclone copy /tmp/downloader/  remote:/дежурства')
+				os.system('rm -r '+directory)
+			
+##============================================================================================================================
+				if not os.path.exists(buf+'/'+"buffer"):
+					os.mkdir(buf+'/buffer')
+				if not os.path.exists(directory+'/перемена-3/'):
+					os.makedirs(directory+'/перемена-3/')	
+				print (directory+'/'+camAttrib+'перемена-3.zip')
+				level3()
+				print ("====================================================done==========================================================")
+				zipper3()
+				sorted(buf+'/buffer/')
+				FileList=os.listdir(buf+'/buffer')
+				FileList.sort()
+				sortList=""
+				for files in FileList:
+					sortList += buf+'/buffer/'+files+' \+ '
+				sortList= sortList[:-3]
+				print (sortList)
+				print('mkvmerge -o \"' +directory+'/перемена-3/'+camAttrib+'\.mkv\" '+sortList)
+				os.system('mkvmerge -o \"' +directory+'/перемена-3/'+camAttrib+'.mkv\" '+sortList)
+				os.system('rm -r '+buf+'/*')
+				os.system('rclone copy /tmp/downloader/ remote:/дежурства')
+				os.system('rm -r '+directory)
+##============================================================================================================================
+				if not os.path.exists(buf+'/'+"buffer"):
+					os.mkdir(buf+'/buffer')
+				if not os.path.exists(directory+'/перемена-4/'):
+					os.makedirs(directory+'/перемена-4/')
+				print (directory+'/'+camAttrib+'перемена-4.zip')
+				level4()
+				
+				print ("====================================================done==========================================================")
+				zipper4()
+				sorted(buf+'/buffer/')
+				FileList=os.listdir(buf+'/buffer')
+				FileList.sort()
+				sortList=""
+				for files in FileList:
+					sortList += buf+'/buffer/'+files+' \+ '
+				sortList= sortList[:-3]
+				print (sortList)
+				print('mkvmerge -o \"' +directory+'/перемена-4/'+camAttrib+'\.mkv\" '+sortList)
+				os.system('mkvmerge -o \"' +directory+'/перемена-4/'+camAttrib+'.mkv\" '+sortList)
+				os.system('rm -r '+buf+'/*')
+				os.system('rclone copy /tmp/downloader/ remote:/дежурства')
+				os.system('rm -r '+directory)
+				
+##============================================================================================================================
+				if not os.path.exists(buf+'/'+"buffer"):
+					os.mkdir(buf+'/buffer')
+				if not os.path.exists(directory+'/перемена-5/'):
+					os.makedirs(directory+'/перемена-5/')	
+				print (directory+'/'+camAttrib+'перемена-5.zip')
+				level5()
+				print ("====================================================done==========================================================")
+				zipper5()
+				sorted(buf+'/buffer/')
+				FileList=os.listdir(buf+'/buffer')
+				FileList.sort()
+				sortList=""
+				for files in FileList:
+					sortList += buf+'/buffer/'+files+' \+ '
+				sortList= sortList[:-3]
+				print (sortList)
+				print('mkvmerge -o \"' +directory+'/перемена-5/'+camAttrib+'\.mkv\" '+sortList)
+				os.system('mkvmerge -o \"' +directory+'/перемена-5/'+camAttrib+'.mkv\" '+sortList)
+				os.system('rm -r '+buf+'/*')
+				os.system('rclone copy /tmp/downloader/ remote:/дежурства')
+				os.system('rm -r '+directory)
+##============================================================================================================================				
+				if not os.path.exists(buf+'/'+"buffer"):
+					os.mkdir(buf+'/buffer')
+				if not os.path.exists(directory+'/перемена-6/'):
+					os.makedirs(directory+'/перемена-6/')	
+				
+				print (directory+'/'+camAttrib+'перемена-6.zip')
+				level6()
+				
+				print ("====================================================done==========================================================")
+				zipper6()
+				sorted(buf+'/buffer/')
+				FileList=os.listdir(buf+'/buffer')
+				FileList.sort()
+				sortList=""
+				for files in FileList:
+					sortList += buf+'/buffer/'+files+' \+ '
+				sortList= sortList[:-3]
+				print (sortList)
+				print('mkvmerge -o \"' +directory+'/перемена-6/'+camAttrib+'\.mkv\" '+sortList)
+				os.system('mkvmerge -o \"' +directory+'/перемена-6/'+camAttrib+'.mkv\" '+sortList)
+				os.system('rm -r '+buf+'/*')
+				os.system('rclone copy /tmp/downloader/ remote:/дежурства')
+				os.system('rm -r '+directory)
+			
+
+print ("==============================================all files has loaded. uploading==============================================")
+#os.system('/root/unifi-project/uploader.sh')
+print ("=====================================all files has uploaded. script closing after 5 second=================================")
+
+
+
+'''print(dateOld+' 09:14:00', dateOld+' 09:26:00', build.attrib,'/',floors.text,'/',dateYear,'/',dateMonth,'/',dateDay,'/',cams.text,'-перемена-',x,'.mp4')'''
+'''anyKey = input("press any key to exit")'''
