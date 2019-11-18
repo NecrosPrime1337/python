@@ -1,0 +1,31 @@
+﻿<buildings>
+<building name="c13">корпус-13<ip name="ip адрес"></ip>
+<key name="api ключ"></key>
+<floors name="этажи"><floor name="1">этаж-1<cam name="c13 floor 1">c13 floor 1</cam><cam name = "cam 1 floor left">c13 floor 1, dining enter</cam></floor>
+<floor name="2">этаж-2<cam name = "cam 2 floor left">c13 floor 2 left</cam><cam name = "cam 2 floor right">c13 floor 2 right</cam></floor>
+<floor name="3">этаж-3<cam name="cam 3 floor top">c13 floor 3 top</cam><cam name = "cam 3 floor left">c13 floor 3 left</cam><cam name = "cam 3 floor right">c13 floor 3 right</cam></floor>
+<floor name="4">этаж-4<cam name="cam 4 floor top">c13 floor 4 top</cam><cam name = "cam 4 floor left">c13 floor 4 left</cam><cam name = "cam 4 floor right">c13 floor 4 right</cam></floor>
+<floor name="5">этаж-5<cam name = "cam 5 floor left">c13 floor 5 left</cam><cam name = "cam 5 floor right">c13 floor 5 right</cam></floor>
+</floors>
+</building>
+<building name="c18">корпус-18<ip name="ip адрес">172.16.61.254</ip>
+<key name="api ключ"></key>
+<floors name="этажи"><floor name="1">этаж-1<cam name="c18 1 floor left">c18 1 floor left</cam><cam name = "c18 1 floor right">c18 1 floor right</cam></floor>
+<floor name="2">этаж-2<cam name ="c18 2 floor left">c18 2 floor left</cam><cam name = "c18 2 floor right">c18 2 floor right</cam></floor>
+<floor name="3">этаж-3<cam name="c18 3 floor left">c18 3 floor left</cam><cam name = "c18 3 floor right">c18 3 floor right</cam></floor>
+<floor name="4">этаж-4<cam name="c18 4 floor top">c18 4 floor top</cam><cam name = "c18 4 floor left">c18 4 floor left</cam><cam name = "c18 4 floor right">c18 4 floor right</cam></floor>
+</floors>
+</building>
+<building name="c1A">корпус-1A<ip name="ip адрес">172.16.10.254</ip>
+<key name="api ключ"></key>
+<floors name="этажи"><floor name="1">этаж-1<cam name="c1A 1 floor left">c1A 1 floor left</cam><cam name = "c1A 1 floor right">c1A 1 floor right</cam><cam name = "c1A 1 floor top">c1A 1 floor top</cam></floor>
+<floor name="2">этаж-2<cam name = "cam 2 floor left">c1A floor 2 left</cam><cam name = "cam 2 floor right">c1A 2 floor near sport</cam></floor>
+</floors>
+</building>
+</buildings>
+
+
+
+
+
+
